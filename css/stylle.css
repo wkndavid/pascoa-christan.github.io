@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0px;
+}
+body {
+    background-color:rgba(125, 43, 232,0.2);
+}
+
+/* TITULOS E PARAGRAFOS */
+h1 {
+    margin-top: 60px;
+    padding: 30px;
+    text-align: center;
+}
+p {
+    text-align: center;
+    text-indent: 50px;     
+}
+
+/* IMAGENS BANNERS */
+#banner {
+    background-image: url('../images/bannner.jpg');
+    height: 490px;
+	width: 100%;
+}
+.logo {
+    float: left;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-left: 20px;
+ }
+
+/* MENU */
+#menu {
+    background-color: rgba(199, 130, 255, 0.9);
+    position: fixed;
+    width: 100%;
+    line-height: 55px;
+    text-align: right;        
+}
+#menu li {
+    display: inline;
+}
+#menu a:link, a:visited {
+    color:whitesmoke;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-shadow: 1px 1px #989;
+}   
+#menu a:hover, a:active {
+	color: whitesmoke;
+	background-color: rgba(199, 80, 245, 0.9)    ;
+	text-shadow: 1px 1px rgb(201, 201, 201);
+	border-radius: 10px;
+}
+
+/* DROPDOWN W3C */
+.navbar {
+    overflow: hidden;
+    background-color: rgba(199, 80, 245, 0.9);
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:  rgba(199, 80, 245, 0.9);
+    border-radius: 10px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(182, 106, 245, 0.9);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+/* SOBRE */
+
+#about {
+	padding-top: 60px;
+	font-size: 20px;
+	text-align: center;
+	margin: 25px;	
+}
+
+/*SEMANA SANTA*/
+#week {
+    padding-top: 30px;
+	font-size: 20px;
+	text-align: center;
+	margin: 25px;	
+}
+
+/* GALERIA */
+#gallery {
+    padding-top: 60px;
+	font-size: 25px;
+	text-align: center; 
+    padding-right: 10px;
+}
+.galeria {
+	width: 250px;
+	height: 200px;
+	margin: 15px;
+	border: 2px solid wheat;
+	border-radius: 10px;
+	box-shadow: 5px 5px 20px #000;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* MAPAS */
+#maps {
+    margin: 0;
+}
+#maps iframe {
+    padding-top: 60px;
+}
+
+/* CONTATOS */ 
+#contacts {
+    padding: 90px;
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+}
+#contacts label {
+        display: block;
+}
+#contacts input, textarea {
+	width: 400px;
+	font-size: 0.8em;
+	padding: 4px;
+	font-family:  Helvetica, sans-serif;
+	border-radius: 5px;
+	border: none;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    background-color: #001;
+    color: azure;
+    padding: 20px;  
+}
+
+/*BOTAO AO TOPO*/
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    text-decoration: none;
+}
+.btn::after {
+    content: url("../images/cruzes/cruz2.png");
+    font-size: 32px;
+    font-weight: bold;
+    transition: margin-top 50ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
+
+/* BOTAO ENVIAR */
+#contacts button{
+	color: #002;
+	background-color:rgba(199, 130, 255, 0.9);
+	font-size: 1em;
+	margin-top: 20px;
+	padding: 30x;
+    border: none;
+    border-radius: 5px;
+	text-transform::capitalize;
+}
+#contacts button:hover{
+	color: #002;
+	background-color: rgba(199, 80, 245, 1);
+	font-size: 1em;
+	margin-top: 20px;
+	padding: 30x;	
+}
